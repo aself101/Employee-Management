@@ -1,0 +1,131 @@
+body {
+  padding-top: 50px;
+}
+
+textarea{
+	resize: vertical;
+}
+
+.wrapIt {
+	/*white-space: nowrap;*/
+	word-wrap: break-word;
+}
+
+.fa-form-delete {
+	color: red;
+} 
+
+.FormDeleteBtn {
+	display: none;
+}
+
+.comments {
+	background-color: #ffffff;
+}
+
+.fa-form-edit {
+	color: blue;
+}
+
+.flex-container {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   
+   align-items: flex-start;
+}
+
+.employeePull {
+	display: none;
+}
+
+.hideForm {
+	display: none;
+}
+
+.flex-item {
+	margin: 0 5px;
+}
+
+.elm {
+	width: 70%;
+}
+
+#inputPhone {
+	font-size: 12px;
+}
+
+@media all (min-width: 400px) {
+	.shrink {
+		font-size: 12px;
+	}
+}
+
+.right {
+	padding-left: 70px;
+	float: right;
+	position: relative;
+}
+#error {
+	display: none;
+}
+
+
+.page-header {
+	border-color: #000000;
+}
+
+/* To be hidden until user adds form elements */
+#AddElements { 
+	display: none;
+}
+
+
+
+input[type="radio"] {
+	-ms-transform: scale(2);
+	-webkit-transform: scale(2);
+	transform: scale(2);
+}
+
+input[type="checkbox"] {
+	-ms-transform: scale(2);
+	-webkit-transform: scale(2);
+	transform: scale(2);
+}
+
+#centerIt {
+	display: inline;
+}
+
+label {
+	word-wrap: normal;
+	white-space: auto;
+}
+/*
+@media all and (max-width: 1200px) {
+	label {
+		transform: scale(0.75);
+	}
+}
+@media all and (max-width: 1040px) {
+	label {
+		transform: scale(0.65);
+	}
+}
+*/
+@media all and (max-width: 577px) {
+	.backToTop {
+		font-size: 10px;
+	}
+}
+@media all and (max-width: 545px) {
+	.backToTop {
+		display: none;
+	}
+}
+/*@media all and (max-width: 685px) {
+	.employeeList {
+		display: none;
+	}
+}*/

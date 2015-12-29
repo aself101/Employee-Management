@@ -13,11 +13,13 @@ Node https://nodejs.org/en/
 MySQL https://www.mysql.com/
 PHP http://php.net/downloads.php
 
-Run ### npm install
-Run ### mysql -u username -p database_name < schema.sql
+Run 
+### npm install
+### mysql -u username -p database_name < schema.sql
 
 To Start gulp server
-Run ### npm install gulp -g
-Run ### sudo gulp
+Run 
+### npm install gulp -g
+### sudo gulp
 
 

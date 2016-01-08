@@ -69,10 +69,10 @@ module.exports = React.createClass({
 			address: this.refs.address.getDOMNode().value,
 			department: this.refs.department.getDOMNode().value,
 			manager: this.refs.manager.getDOMNode().value,
-	      	hireDate: this.refs.hireDate.getDOMNode().value,
-	      	startDate: this.refs.startDate.getDOMNode().value,
-	      	endDate: this.refs.endDate.getDOMNode().value,
-	      	permissions: this.refs.permissions.getDOMNode().value
+		      	hireDate: this.refs.hireDate.getDOMNode().value,
+		      	startDate: this.refs.startDate.getDOMNode().value,
+		      	endDate: this.refs.endDate.getDOMNode().value,
+		      	permissions: this.refs.permissions.getDOMNode().value
 	    }
 	    if (this.props.question) data.question = this.refs.question.getDOMNode().value
 	    return data
@@ -222,7 +222,7 @@ module.exports = React.createClass({
 				{this.renderTextInput("displayName", "Display Name")}
 				{this.renderTextInput("email", "Email")}
 				<FormHeader header="Header 1" nav="Header1" date=""/>
-				{this.renderSelect("country", "Country", OPTIONS.COUNTRIES, "Select Country", "", this.setGeminiInfo)}
+				{this.renderSelect("country", "Country", OPTIONS.COUNTRIES, "Select Country", "", this.setInfo)}
 				{this.renderSelect("hireLoc", "Hire Location", OPTIONS.HIRELOCATION, "Select Location")}
 				{this.renderSelect("state", "State", OPTIONS.STATES, "Select State")}
 				{this.renderSelect("company", "Company", OPTIONS.COMPANIES, "Select Company")}	

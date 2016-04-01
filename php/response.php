@@ -1,11 +1,5 @@
 <?php
 
-/*
-include("gemSession2.class.php");
-$session = new gemSession();
-$level = $session->getLevel($session->data[0]['objectguid'], 'elm');
-// print_r($session->data[0]['department']);
-*/
 
 if(is_ajax()) {
 	$config = parse_ini_file('../config.ini');

@@ -48,12 +48,11 @@ function mailOut($firstname,$lastname,$hireDate,$email,$endDate,$position,
 		}
 	}	
 
-	$to = 'aself@gemini.edu';
+	$to = '';
 	$subject = 'Testing mail for employee creation';
 
 	$message = "<html><body>";
 	$message .= "<center><hr><h1>Please welcome: " . strip_tags($categories[0]) . " " . strip_tags($categories[1]) . "<h1><hr></center>\r";
-	$message .= '<img style="width: 100%;" src="http://www.gemini.edu/themes/www.gemini.edu/themes/4/images/header/header-top-3.jpg" alt="Gemini new employee" />';
 	$message .= '<table rules="all" style="width: 100%;border-color: #666;" cellpadding="10">';
 	$message .= "<tr style='background: #eee;'><td><strong>Employee:</strong> </td><td>" . strip_tags($categories[0]) . " " . strip_tags($categories[1]) . "</td></tr>\r";
 	$message .= "<tr><td><strong>Position:</strong> </td><td>" . strip_tags($categories[2]) . "</td></tr>\r";
@@ -91,14 +90,11 @@ function mailOut($firstname,$lastname,$hireDate,$email,$endDate,$position,
 	$message .= "<center><hr><h3>Hiring Manager</h3><hr></center>";
 	$message .= "<ul><li><b>Discussion with employee on Job description, performance expectations, schedules, timecard, sick leave, etc.</b></li>";
 	$message .= "<li><b>Additional project accounts needed on timecard selection list, send email toPayroll@aura-astronomy.org.</b></li>";
-	$message .= "<li><b>Account viewing permissions need on CASNET (if any), send email tocasnet@aura-astronomy.org.</b></li>";
-	$message .= "<li><b>Approve signature authority on accounts (if any), send email toprocurement@aura-astronomy.org.</b></li>";
 	$message .= "</ul>";
 	$message .= "</body></html>";
 
 	$headers  = 'MIME-Version: 1.0' . "\r\n";
 	$headers .= 'Content-type: text/html;' . "\r\n";
-	$headers .= 'From: Test <aself@hawaii.edu>' . "\r\n";
 	mail($to, $subject, $message, $headers);
 
 }
